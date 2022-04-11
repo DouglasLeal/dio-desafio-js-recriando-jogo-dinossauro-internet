@@ -1,2 +1,2 @@
-# dio-desafio-js-recriando-jogo-dinossauro-internet
+# DIO - Desafio: JS - Recriando jogo do dinossauro sem internet
 Desafio DIO - Recriando o famoso jogo do dinossauro sem internet

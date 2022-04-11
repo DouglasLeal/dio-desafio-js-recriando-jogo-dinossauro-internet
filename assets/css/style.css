@@ -1,0 +1,101 @@
+@keyframes play-game{
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes bg-animate {
+    from {
+        background-position: 999999%;
+    }
+
+    to {
+        background-position: 0%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    background: #fafafa;
+    overflow: hidden;
+    height: 100vh;   
+}
+
+.score{
+    font-size: 2rem;
+    padding-left: 25px;    
+}
+
+.score span{
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+.msg-play-game {
+    position: absolute;
+    top: 40vh;
+    left: calc(50vw - 373px/2);
+    font-size: 2rem;    
+    animation: play-game 1s linear infinite alternate;
+}
+
+.msg-end-game {
+    position: absolute;
+    top: 40vh;
+    left: calc(50vw - 285px/2);
+    text-align: center;
+}
+
+.msg-end-game .end-title{
+    font-size: 3rem;
+}
+
+.msg-end-game .end-sub{
+    margin-top: 25px;
+    font-size: 1rem;
+    animation: play-game 1s linear infinite alternate;
+}
+
+.background{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url('../img/background.png');
+    width: 100vw;
+    height: 200px;
+}
+
+.bg-animate{
+    animation: bg-animate 9999s infinite linear;
+}
+
+.player{
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    background-image: url('../img/dino.png');
+    width: 60px;
+    height: 60px;
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 5px;
+    right: 0;
+    background-image: url('../img/cactus.png');
+}
+
+.d-none{
+    display: none;
+}
